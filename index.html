@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html id="home" lang="en" id="nice-scroll">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="icon" href="images/jquery-icon.png">
+    <link rel="stylesheet" href="styles/all.min.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+
+<body>
+
+    <!--Start Header-->
+    <ul class="navbar">
+        <li><a href="#" data-scrollto="home">Home</a></li>
+        <li><a href="#" data-scrollto="about-us">About Us</a></li>
+        <li><a href="#" data-scrollto="services">Services</a></li>
+        <li><a href="#" data-scrollto="solutions">Solutions</a></li>
+        <li><a href="#" data-scrollto="products">Products</a></li>
+        <li><a href="#" data-scrollto="contact-us">Contacts Us</a></li>
+    </ul>
+    <!--End Header-->
+
+    <!--Start Fixed Menue-->
+
+    <div class="fixed-menue">
+        <i class="fa fa-cog"></i>
+        <h2>Change Colors</h2>
+        <ul class="colors">
+            <li class="color-name color-blue" data-defualt-color="blue"></li>
+            <li class="color-name color-red" data-defualt-color="red"></li>
+            <li class="color-name color-green" data-defualt-color="green"></li>
+            <li class="color-name color-pink" data-defualt-color="pink"></li>
+        </ul>
+        <h2>Important Links</h2>
+        <p>Testing Links</p>
+    </div>
+
+    <!--End Fixed Menue-->
+
+    <!-- Start Home  -->
+
+    <!--Start Content-->
+    <section id="home" class="block skin-color">
+        <h2>Home</h2><br>
+
+        <!--Start Buttons Effect-->
+
+        <div class="erorr-message">
+            This Is My Message Are You Sure What Are You Want?
+        </div>
+        <span class="showpopup" data-popup=".first-popup">Show 1st PopUp</span>
+        <span class="showpopup" data-popup=".second-popup">Show 2nd PopUp</span><br><br>
+        <div class="container-buttons">
+            <button class="buttons-effects from-left">
+                <span>From Left</span>
+            </button>
+            <button class="buttons-effects from-top">
+                <span>From Top</span>
+            </button>
+            <button class="buttons-effects from-bottom">
+                <span>From Bottom</span>
+            </button>
+            <button class="buttons-effects from-right">
+                <span>From right</span>
+            </button><br><br>
+            <button class="buttons-effects border-left">
+                <span>Border Left</span>
+            </button>
+            <button class="buttons-effects border-top">
+                <span>Border Top</span>
+            </button>
+            <button class="buttons-effects bounce-top">
+                <span>Bounce Top</span>
+            </button>
+        </div>
+        <!--End Buttons Effect-->
+
+        <!-- Start Loading Bars -->
+        <div class="loading-bars">
+            <div class="loading-bar blue-progress">
+                <span data-progress="65%"></span>
+            </div>
+            <div class="loading-bar red-progress">
+                <span data-progress="40%"></span>
+            </div>
+            <div class="loading-bar green-progress">
+                <span data-progress="80%"></span>
+            </div>
+            <div class="loading-bar pink-progress">
+                <span data-progress="15%"></span>
+            </div>
+        </div>
+        <!-- End Loading Bars -->
+
+        <!-- Start Gallery Sliders -->
+
+        <div class="gallery">
+            <div class="master-img">
+                <i class="fa fa-chevron-circle-left fa-lg skin-color"></i>
+                <i class="fa fa-chevron-circle-right fa-lg skin-color"></i>
+                <img src="images/1.jpeg" alt="">
+            </div>
+            <div class="other-img">
+                <img class="selected" src="images/1.jpeg" alt="">
+                <img src="images/2.jpeg" alt="">
+                <img src="images/3.jpeg" alt="">
+                <img src="images/4.jpeg" alt="">
+            </div>
+        </div>
+
+        <!-- End Gallery Sliders -->
+
+        <!-- Start Gallery Products -->
+
+        <div class="products grid-view">
+            <div class="product">
+                <h3>Product One</h3>
+                <span class="date">10/01/2020</span>
+                <img src="images/1.jpeg" alt="">
+                <i class="fas fa-plus"></i>
+                <p>This Is Description About This Product.</p>
+            </div>
+            <div class="product" data-gridoflist="grid">
+                <h3>Product Two</h3>
+                <span class="date">05/01/2020</span class="date">
+                <img src="images/2.jpeg" alt="">
+                <i class="fas fa-plus"></i>
+                <p>This Is Description About This Product.</p>
+            </div>
+        </div>
+
+        <!-- End Gallery Products -->
+        <div id="option">
+            <i class="fas fa-th-large choose-type" data-type="grid-view"></i>
+            <i class="fa fa-list-ul choose-type option-selected" data-type="list-view"></i>
+        </div>
+        <!-- Start Gallery Items -->
+
+        <div class="items list-view">
+
+            <div class="item">
+                <h3>Item One</h3>
+                <span class="date">10/01/2020</span>
+                <img src="images/4.jpeg" alt="" style="width: 105px; height: 100px;">
+                <i class="fas fa-plus"></i>
+                <p>This Is Description About This Product.</p>
+            </div>
+            <div class="item">
+                <h3>Item Two</h3>
+                <span class="date">05/01/2020</span class="date">
+                <img src="images/5.jpeg" alt="" style="width: 105px; height: 100px;">
+                <i class="fas fa-plus"></i>
+                <p>This Is Description About This Product.</p>
+            </div>
+        </div>
+
+        <!-- End Gallery Products -->
+
+        <!-- Start From -->
+        <div class="my-form">
+            <form class="this-form">
+                <div>
+                    <input class="uniqe-code" required='required' type="text" name="name"
+                        placeholder="Type Your Name Please" data-placeholder="الرجاء كتابة اسم الستخدم">
+                    <span>Please Fill This Field</span>
+                <div class="keycode"></div>
+            </div>
+            <div>
+                <input required='required' type="email" name="email" placeholder="Type Your Email Please" data-placeholder=" ارجاء كتابة الايميل الخاص بك">
+                <span>Please Fill This Field</span>
+            </div>
+            <div>
+                <input required='required' type="password" name="password" placeholder="Type Your Password Please" data-placeholder="الرجاء كتابة كلمة السر الخاصة بك">
+                <span>Please Fill This Field</span>
+            </div>
+            <div>
+                <textarea required='required' placeholder="Type Your Message Please" data-placeholder="الرجاء كتابة الرسالة بشكل دقيق"></textarea required='required'>
+                <span>Please Fill This Field</span>
+            </div>
+            <div>
+                <input type="text" class="tag-input" placeholder="Please Type Your Tags If You Want">
+                <div class="tags">
+                </div>
+            </div>
+            <input type="file">
+            <input type="submit" value="Submit">
+            </form>
+
+            <!-- End From -->
+        </div>
+
+        <div class="paragraph">
+            <p class="p-one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eum ipsum aliquid quibusdam ducimus. Culpa enim voluptate nemo numquam architecto.
+            </p>
+            <p class="p-two">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eum ipsum aliquid quibusdam ducimus. Culpa enim voluptate nemo numquam architectLorem ipsum dolor sit amet consectetur adipisicing elit. Natus eum ipsum aliquid quibusdam ducimus. Culpa enim voluptate nemo numquam architecto.o.
+            </p>
+            <p class="p-three">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eum ipsum aliquid quibusdam ducimus. Culpa enim voluptate nemo numquam architecto.Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eum ipsum aliquid quibusdam ducimus. ducimus. Culpa enim voluptate nemo numquam architecto. Culpa eni. ducimus. Culpa enim voluptate nemo numquam architecto. Culpa eni. ducimus. Culpa enim voluptate nemo numquam architecto. Culpa eni. ducimus. Culpa enim voluptate nemo.
+            </p>
+        </div>
+
+        <!-- Start Paragraph With Same Height -->
+
+        <div class="p-same-height">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eum ipsum aliquid quibusdam ducimus. Culpa enim voluptate nemo numquam architecto.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eum ipsum aliquid quibusdam ducimus. Culpa enim voluptate nemo numquam architectLorem ipsum dolor sit amet consectetur adipisicing elit. Natus eum ipsum aliquid quibusdam ducimus. Culpa enim voluptate nemo numquam architecto.o.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eum ipsum aliquid quibusdam ducimus. Culpa enim voluptate nemo numquam architecto.Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eum ipsum aliquid quibusdam ducimus. ducimus. Culpa enim voluptate nemo numquam architecto. Culpa eni. ducimus. Culpa enim voluptate nemo numquam architecto.
+            </p>
+        </div>
+
+        <!-- End Paragraph With Same Height -->
+
+        <!-- Start Create Shuffle Cards -->
+
+        <div class="cards">
+            <div class="card card-one">Card 1</div>
+            <div class="card card-two">Card 2</div>
+            <div class="card card-three">Card 3</div>
+            <div class="card card-four">Card 4</div>
+            <div class="card card-five">Card 5</div>
+            <div class="card card-six">Card 6</div>
+            <div class="card card-seven">Card 7</div>
+            <div class="card card-eight">Card 8</div>
+            <div class="card card-nine">Card 9</div>
+            <div class="card card-ten">Card 10</div>
+        </div>
+
+        <!-- End Create Shuffle Cards -->
+
+        <!-- Start Blink Warining -->
+
+        <div class="blink-waning">
+            <div>Focus On Your Dream</div>
+        </div>
+
+        <!-- End Blink Warining -->
+        
+        <!-- Start ToDo List -->
+
+        <div class="container">
+            <div class="todo-list">
+                <h3>ToDo List</h3>
+                <ul>
+                    <li>Learn New Skill In jQuery</li>
+                    <li>Learn English</li>
+                    <li>Go To  The My Freind's Home</li>
+                </ul>
+                <form method="POST" class="tasks">
+                    <input class="add-task"  type="text"  placeholder="Put The New Task Here" name="New Task">
+                </form>
+            </div>
+        </div>
+
+        <!-- End ToDo List -->
+
+        <!-- Start Typer -->
+
+        <div class="container">
+            <p data-text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur perferendis impedit doloribus nam placeat necessitatibus molestias ex quisquam itaque assumenda. Eius odit ad quidem autem temporibus iure unde assumenda nihil, reiciendis possimus praesentium sint quia aperiam nemo debitis minima, dolorem fugit. Ratione eveniet nesciunt inventore dolorum quod tenetur, doloribus ipsum? You Want Me Typer Again Okey Lest's Go>>> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur perferendis impedit doloribus nam placeat necessitatibus molestias ex quisquam itaque assumenda. Eius odit ad quidem autem temporibus iure unde assumenda nihil, reiciendis possimus praesentium sint quia aperiam nemo debitis minima, dolorem fugit. Ratione eveniet nesciunt inventore dolorum quod tenetur, doloribus ipsum?" class="p-typer"></p>
+        </div>
+
+        <!-- End Typer -->
+
+        <!-- Start Table Prices -->
+
+        <table class="container">
+            <thead>
+                <tr>
+                <th>Name</th>
+                <th>Value</th>
+                <th>Price</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <tr>
+                    <td>Data One</td>
+                    <td>10 Items</td>
+                    <td>860</td>
+                </tr>
+                <tr>
+                    <td>Data Two</td>
+                    <td>5 Items</td>
+                    <td>245</td>
+                </tr>
+                <tr>
+                    <td>Data Three</td>
+                    <td>6 Items</td>
+                    <td>348</td>
+                </tr>
+                <tr>
+                    <td>Data Four</td>
+                    <td>1 Items</td>
+                    <td>Hundred</td>
+                </tr>
+                <tr>
+                    <td>Data Five</td>
+                    <td>2 Items</td>
+                    <td>45</td>
+                </tr>
+                <tr>
+                    <td>Data Six</td>
+                    <td>1 Items</td>
+                    <td>80</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                <td colspan="2"><span>Total</span></td>
+                <td id="total-price"></td>
+                </tr>
+            </tfoot>
+        </table>
+
+
+        <!-- End Table Prices -->
+
+        <!-- Start Auto Change Content -->
+
+        <div class="container">
+            <div class="auto-change">
+                <h3>Today Notes</h3>
+                <ul class="ul-styling">
+                    <li class="li-active">Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, consequatur!</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, excepturi eveniet. Alias facere porro nostrum?</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed odit, recusandae ex facilis magni sunt aliquid porro neque itaque ipsam.</li>
+                    <li>Lorem ipsum dolor sit.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo id fugit facere veritatis provident eligendi perferendis cupiditate aspernatur a est. Molestiae aliquam expedita repudiandae molestias.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- End Auto Change Content -->
+
+        <!-- Start Create Dynamic Tabs -->
+
+        <div class="switch container ul-style">
+            <button id="switch-veiw">Switch Veiw</button>
+            <div>
+                <ul>
+                    <li class="liactive" data-content=".content1">One</li>
+                    <li data-content=".content2">Two</li>
+                    <li data-content=".content3">Three</li>
+                    <li data-content=".content4">Four</li>
+                    <li data-content=".content5">Five</li>
+                </ul>
+            </div>
+            <div class="content">
+                <div class="content1">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum, perspiciatis.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum, perspiciatis.
+                </div>
+                <div class="content2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi accusamus ad corporis commodi ipsum ipsam!
+                </div>
+                <div class="content3">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus dolorem hic iste dolorum deleniti voluptatem nostrum. Modi, maxime?
+                </div>
+                <div class="content4">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </div>
+                <div class="content5">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos voluptatem vitae aspernatur dolores, deserunt eligendi recusandae doloribus ipsam cupiditate unde.
+                </div>
+            </div>
+        </div>
+            
+        <!-- End Create Dynamic Tabs --> 
+
+        <!-- Start Create Email Suggest Box  -->
+
+        <div class="container">
+            <form class="email-form">
+                <input type="email" name="email" id="email" placeholder="Type Your Email, Please">
+            </form>
+        </div>
+
+        <!-- End Create Email Suggest Box  -->
+
+    </section>
+
+    <!-- End Home  -->
+
+    <section id="about-us" class="block skin-color skin-background">
+        <h2>About Us</h2>
+    </section>
+    <section id="services" class="block skin-color">
+        <h2>Services</h2>
+    </section>
+    <section id="solutions" class="block skin-color">
+        <h2>Solutions</h2>
+    </section>
+    <section id="products" class="block skin-color">
+        <h2>Products</h2>
+    </section>
+    <section id="contact-us" class="block skin-color">
+        <h2>Contacts Us</h2>
+    </section>
+    <!--End Content-->
+
+    <!--Start Scroll To Top Button-->
+    <a id="scroll-to-top" href="#">
+        <i class="fas fa-angle-double-up fa-3x skin-color"></i>
+    </a>
+    <!--End Scroll To Top Button-->
+
+    <!--Start 1st Popup-->
+    <div class="popup first-popup">
+        <div class="innerpopup">
+            <h2>This Is 1st PopUp</h2><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt amet in fugiat rerum facilis rem natus, nisi quam temporibus, laudantium perferendis ad veritatis aliquid ipsa recusandae vitae numquam enim optio!
+            </p>
+            <button class="closepopup">Close</button>
+        </div>
+    </div>
+    <!--End 1st Popup-->
+
+    <!--Start 2nd Popup-->
+    <div class="popup second-popup">
+        <div class="innerpopup">
+            <h2>This Is 2nd PopUp</h2><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt amet in fugiat rerum facilis rem natus, nisi quam temporibus, laudantium perferendis ad veritatis aliquid ipsa recusandae vitae numquam enim optio!
+            </p>
+            <button class="closepopup">Close</button>
+        </div>
+    </div>
+    <!--End 2nd Popup-->
+
+    <script src="scripts/jquery-3.4.1.min.js"></script>
+    <script src="scripts/index.js"></script>
+</body>
+
+</html>

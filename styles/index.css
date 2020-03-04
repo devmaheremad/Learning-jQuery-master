@@ -1,0 +1,1154 @@
+/* Star Global Rules */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Tahoma;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 50px auto;
+    width: 800px;
+    overflow: hidden;
+}
+
+#scroll-to-top {
+    text-decoration: none;
+    position: fixed;
+    display: inline-block;
+    bottom: 20px;
+    right: 20px;
+    color: #e32249;
+    display: none;
+}
+
+
+/* End Global Rules */
+
+
+/* Star Header */
+
+.navbar {
+    background-color: #e32249;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    font-weight: bold;
+    opacity: .8;
+}
+
+.navbar li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff
+}
+
+.active {
+    color: #ffff00
+}
+
+
+/* End Header */
+
+
+/* Start Fixed Menut */
+
+.fixed-menue {
+    width: 250px;
+    height: 100%;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    background-color: #E32249;
+    z-index: 999;
+    color: #fff
+}
+
+.fixed-menue .fa-cog {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 0 10px 10px 0;
+    background-color: #E32249;
+    font-weight: 900;
+    position: absolute;
+    top: 55px;
+    cursor: pointer;
+}
+
+
+/* End Fixed Menut */
+
+
+/* Start Theme Colors*/
+
+.colors .color-name {
+    list-style: none;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.colors .color-blue {
+    background-color: #2517f1;
+}
+
+.colors .color-red {
+    background-color: #db1111;
+}
+
+.colors .color-green {
+    background-color: #07d318;
+}
+
+.colors .color-pink {
+    background-color: #ca67b9;
+}
+
+[data-theme-defual="blue"] .skin-color {
+    color: #2517f1;
+}
+
+[data-theme-defual="blue"] .skin-background {
+    background-color: #2517f1;
+    color: white;
+}
+
+[data-theme-defual="red"] .skin-color {
+    color: #db1111;
+}
+
+[data-theme-defual="red"] .skin-background {
+    background-color: #db1111;
+    color: white;
+}
+
+[data-theme-defual="green"] .skin-color {
+    color: #07d318;
+}
+
+[data-theme-defual="green"] .skin-background {
+    background-color: #07d318;
+    color: white;
+}
+
+[data-theme-defual="pink"] .skin-color {
+    color: #ca67b9;
+}
+
+[data-theme-defual="pink"] .skin-background {
+    background-color: #ca67b9;
+    color: white;
+}
+
+
+/* End Theme Colors*/
+
+
+/* Star Content */
+
+section {
+    font-size: 25px;
+}
+
+.block {
+    min-height: 1000px;
+    background-color: #d8c962;
+    padding-bottom: 20px;
+}
+
+.block h2 {
+    text-align: center;
+}
+
+.erorr-message {
+    width: 650px;
+    background-color: #109710b3;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    z-index: 99999;
+}
+
+.showpopup {
+    background-color: #8b6666;
+    padding: 10px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+
+/* End Content */
+
+
+/* Star Popup */
+
+.popup {
+    width: 100%;
+    height: 100%;
+    background-color: #98a4c966;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: none;
+    z-index: 999;
+}
+
+.popup .innerpopup {
+    width: 300px;
+    height: 300px;
+    background-color: #e32249;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-left: -150px;
+    margin-top: -150px;
+    padding: 15px;
+}
+
+.popup .innerpopup .closepopup {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+
+/* End Popup */
+
+
+/* Star Buttons Effect */
+
+.buttons-effects {
+    width: 160px;
+    padding: 10px;
+    background-color: #f17362;
+    padding: 10px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+    margin-left: 5px;
+    margin: 5px;
+}
+
+.from-left span:first-of-type {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #b14335;
+    height: 100%;
+    z-index: 1;
+}
+
+.from-left span:last-of-type {
+    position: relative;
+    z-index: 2;
+}
+
+.from-top {
+    background-color: #ce5e35;
+    position: relative;
+}
+
+.from-top span:first-of-type {
+    background-color: #ac411e;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.from-top span:last-of-type {
+    position: relative;
+    z-index: 2;
+}
+
+.from-bottom {
+    background-color: #f0134d;
+}
+
+.from-bottom span:first-of-type {
+    display: block;
+    background-color: #b3133eb6;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.from-bottom span:last-of-type {
+    position: relative;
+    z-index: 2;
+}
+
+.from-right {
+    background-color: #851D41;
+}
+
+.from-right span:first-of-type {
+    display: block;
+    background-color: #4b1025;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.from-right span:last-of-type {
+    position: relative;
+    z-index: 2;
+}
+
+.border-left {
+    border-radius: 0;
+    position: relative;
+    overflow: visible;
+}
+
+.border-left span:first-of-type {
+    background-color: #fff;
+    display: block;
+    border-radius: 0;
+    position: absolute;
+    top: -4px;
+    left: 0;
+    height: 4px;
+}
+
+.border-top {
+    border-radius: 0;
+    position: relative;
+    overflow: visible;
+}
+
+.border-top span:first-of-type {
+    background-color: #fff;
+    display: block;
+    border-radius: 0;
+    position: absolute;
+    top: 0;
+    left: -4px;
+    width: 4px;
+}
+
+.bounce-top {
+    position: relative;
+}
+
+
+/* End Buttons Effect */
+
+
+/* Star Loading Bars */
+
+.loading-bar {
+    width: 332px;
+    height: 35px;
+    margin: 20px 5px;
+    border: 1px solid #917f0f;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #F1F2F2
+}
+
+.loading-bar span {
+    text-align: left;
+    line-height: 35px;
+    color: rgb(37, 34, 4);
+    text-indent: 20px;
+    font-size: 18px;
+}
+
+.blue-progress span {
+    display: block;
+    width: 0;
+    height: 100%;
+    background-color: #2517f1;
+}
+
+.red-progress span {
+    display: block;
+    width: 0;
+    height: 100%;
+    background-color: #db1111;
+}
+
+.green-progress span {
+    display: block;
+    width: 0;
+    height: 100%;
+    background-color: #07d318;
+}
+
+.pink-progress span {
+    display: block;
+    width: 0;
+    height: 100%;
+    background-color: #ca67b9;
+}
+
+
+/* End Loading Bars */
+
+
+/* Start Styling Gallery */
+
+div.gallery {
+    width: 800px;
+    margin: auto;
+    background-color: white;
+    border: 2px solid #a8a6a6;
+    padding: 3px;
+    position: relative;
+    z-index: 1;
+}
+
+div.gallery i.fa-chevron-circle-left,
+div.gallery i.fa-chevron-circle-right {
+    position: absolute;
+    top: 12px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+div.gallery i.fa-chevron-circle-left {
+    left: 8px;
+}
+
+div.gallery i.fa-chevron-circle-right {
+    right: 8px;
+}
+
+div.gallery img {
+    cursor: pointer;
+}
+
+div.gallery .master-img {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 3px;
+}
+
+div.gallery .master-img img {
+    width: 100%;
+    height: 500px;
+}
+
+div.gallery .other-img {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.gallery .other-img img {
+    height: 150px;
+    border: 1px solid gray;
+    padding: 3px;
+    opacity: 0.4;
+}
+
+
+/* div.gallery .other-img img:not(:last-of-type) {
+    margin-right: .5%;
+} */
+
+div.gallery .other-img img.selected {
+    border: 2px solid red;
+    opacity: 1;
+}
+
+
+/* End Styling Gallery */
+
+
+/* Start Styling Products Gallery */
+
+
+/* Start Styling Grid */
+
+div.products.grid-view {
+    width: 800px;
+    background-color: #968831;
+    margin: 50px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.products.grid-view .product {
+    width: 400px;
+}
+
+div.products.grid-view .product h3 {
+    text-align: left;
+}
+
+div.products.grid-view .product .date {
+    display: block;
+    text-align: left;
+    color: #6e0d0d;
+    font-size: 12px;
+    margin: 10px 0;
+}
+
+div.products.grid-view .product img {
+    display: block;
+    width: 100%;
+    padding: 10px;
+}
+
+div.products.grid-view div.product i {
+    display: inline-block;
+    cursor: pointer;
+    margin: 10px 0 0 0;
+    background-color: rgb(104, 93, 11);
+    padding: 10px;
+    margin: 5px 0;
+}
+
+div.products.grid-view div.product p {
+    padding: 8px 0;
+    display: none;
+}
+
+
+/* End Styling Grid */
+
+
+/* Start List Style */
+
+div.products.list-view {
+    width: 800px;
+    margin: 50px auto 0;
+}
+
+div.products.list-view .product {
+    position: relative;
+    border: 1px solid #8a6363;
+    min-height: 100px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    background-color: #968831;
+}
+
+div.products.list-view .product h3 {
+    margin-top: 10px;
+    margin-left: 120px;
+}
+
+div.products.list-view .product .date {
+    display: block;
+    color: #6e0d0d;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-left: 120px;
+}
+
+div.products.list-view div.product img {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+div.products.list-view div.product i {
+    display: none;
+}
+
+div.products.list-view div.product p {
+    margin-top: 5px;
+    margin-left: 120px;
+}
+
+
+/* End List Style */
+
+
+/* End Styling Items Gallery */
+
+
+/* End Styling Products Gallery */
+
+
+/* Start Styling Items Gallery */
+
+.choose-type {
+    cursor: pointer;
+    display: inline-block;
+}
+
+
+/* Start Grid Style */
+
+div.items.grid-view {
+    width: 800px;
+    background-color: #968831;
+    margin: 50px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.items.grid-view .item {
+    width: 400px;
+}
+
+div.items.grid-view .item h3 {
+    text-align: left;
+}
+
+div.items.grid-view .item .date {
+    display: block;
+    text-align: left;
+    color: #6e0d0d;
+    font-size: 12px;
+    margin: 10px 0;
+}
+
+div.items.grid-view .item img {
+    display: block;
+    width: 100%;
+    padding: 10px;
+}
+
+div.items.grid-view div.item i {
+    display: block;
+    cursor: pointer;
+    margin: 10px 0 0 0;
+    background-color: rgb(104, 93, 11);
+    padding: 5px 0;
+}
+
+div.items.grid-view div.item p {
+    padding: 8px 0;
+    display: none;
+}
+
+
+/* End Grid Style */
+
+
+/* Start List Style */
+
+div.items.list-view {
+    width: 800px;
+    margin: auto;
+}
+
+div.items.list-view .item {
+    position: relative;
+    border: 1px solid #8a6363;
+    min-height: 100px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    background-color: #968831;
+}
+
+div.items.list-view .item h3 {
+    margin-top: 10px;
+    margin-left: 120px;
+}
+
+div.items.list-view .item .date {
+    display: block;
+    color: #6e0d0d;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-left: 120px;
+}
+
+div.items.list-view div.item img {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+div.items.list-view div.item i {
+    display: none;
+}
+
+div.items.list-view div.item p {
+    margin-top: 5px;
+    margin-left: 120px;
+}
+
+
+/* End List Style */
+
+.option-selected {
+    color: red !important;
+}
+
+
+/* End Styling Items Gallery */
+
+
+/* Start Styling Our Form*/
+
+div.my-form {
+    width: 800px;
+    margin: auto;
+}
+
+div.my-form .this-form {
+    width: 100%;
+}
+
+div.my-form .this-form div span:last-of-type {
+    display: none
+}
+
+div.my-form .this-form input,
+div.my-form .this-form textarea {
+    width: 65%;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+div.my-form .this-form textarea {
+    height: 200px;
+}
+
+div.my-form .this-form .upload-file {
+    width: 65%;
+    min-height: 100px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(169, 169, 169);
+    background-color: #fff;
+    position: relative;
+}
+
+div.my-form .this-form .upload-file input[type="file"] {
+    position: relative;
+    opacity: 0;
+    width: 100%;
+    z-index: 999999;
+}
+
+div.my-form .this-form .upload-file span {
+    display: inline-block !important;
+    position: absolute;
+    top: 10px;
+    left: 7px;
+    color: rgb(110, 105, 105)
+}
+
+div.my-form .this-form .upload-file i {
+    position: absolute;
+    top: 11px;
+    right: 10px;
+    z-index: 1;
+    height: 50px;
+}
+
+div.my-form .this-form input[value="Submit"] {
+    background-color: navajowhite;
+}
+
+.tags span {
+    display: inline-block !important;
+    background-color: #c7c1c1;
+    color: #413f3f;
+    margin: 5px;
+    padding: 8px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.tags span i {
+    margin: 5px;
+    color: rgb(48, 46, 46);
+    cursor: pointer;
+}
+
+
+/* End Styling Our Form*/
+
+
+/* Start Styling Our The Same Height Paragraph*/
+
+.paragraph p {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: rgb(170, 162, 162);
+    color: #000;
+    text-align: center;
+}
+
+.paragraph p {
+    margin: 50px auto;
+    text-align: center;
+    padding: 10px;
+    width: 800px;
+}
+
+p span.show-more {
+    color: #910505;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+p span.show-less {
+    color: #910505;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.p-same-height {
+    width: 800px;
+    text-align: left;
+    margin: 50px auto;
+    overflow: hidden;
+}
+
+.p-same-height p {
+    width: 32.6667%;
+    float: left;
+    background-color: #a89f9f;
+    padding: 10px;
+}
+
+.p-same-height p:not(:last-child) {
+    margin-right: 1%
+}
+
+
+/* End Styling Our The Same Height Paragraph*/
+
+
+/* Start Styling Our Shuffle Cards */
+
+.cards {
+    width: 800px;
+    height: 200px;
+    margin: 50px auto;
+    position: relative;
+    z-index: 1;
+}
+
+.cards .card {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 50%;
+    margin-left: -75px;
+    text-align: center;
+    line-height: 150px;
+    cursor: pointer;
+    border: 4px solid #000;
+    font-weight: bold;
+}
+
+.cards .card-one {
+    background-color: #00ffff;
+}
+
+.cards .card-two {
+    background-color: #8a2be2;
+}
+
+.cards .card-three {
+    background-color: #a52a2a;
+}
+
+.cards .card-four {
+    background-color: #b8860b;
+}
+
+.cards .card-five {
+    background-color: #e9967a;
+}
+
+.cards .card-six {
+    background-color: #ff1493;
+}
+
+.cards .card-seven {
+    background-color: #ffd700;
+}
+
+.cards .card-eight {
+    background-color: #32cd32;
+}
+
+.cards .card-nine {
+    background-color: #6e431c;
+}
+
+.cards .card-ten {
+    background-color: #f0e68c;
+}
+
+
+/* End Styling Our Shuffle Cards */
+
+
+/* Start Blink Waning */
+
+.blink-waning {
+    width: 400px;
+    height: 80px;
+    color: #fff;
+    margin: 50px auto;
+    background-color: #a56e27;
+    text-align: center;
+    line-height: 80px;
+    border-radius: 10px;
+    border: 2px solid #412705;
+    font-size: 35px;
+}
+
+
+/* End Blink Waning */
+
+
+/* Start ToDo-List */
+
+.todo-list {
+    width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 2px solid #412705;
+}
+
+.todo-list h3 {
+    padding: 20px;
+    border-bottom: 2px solid #412705;
+    text-align: center;
+    font-size: 35px;
+}
+
+.todo-list ul li {
+    list-style: none;
+    border-bottom: 1px dashed #412705;
+    padding: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.todo-list form input {
+    list-style: none;
+    border-bottom: 1px dashed #412705;
+    padding: 20px;
+    font-size: 30px;
+    margin: 1%;
+    width: 98%;
+    outline: none;
+    border: none;
+}
+
+
+/* End ToDo-List */
+
+p.p-typer {
+    min-height: 400px;
+    padding: 15px;
+    background-color: #a56e27;
+    font-weight: bold;
+}
+
+
+/* Start Table Prices */
+
+table thead {
+    background-color: #905F22;
+}
+
+table tbody {
+    background-color: #A89F9F;
+}
+
+table tfoot {
+    background-color: #905F22;
+}
+
+table td,
+table th {
+    padding: 10px;
+}
+
+
+/* End Table Prices */
+
+
+/* Start Auto Change Content */
+
+.ul-styling li {
+    margin-top: 10px;
+    font-weight: bold;
+    background-color: #a56e27;
+    text-align: center;
+    padding: 20px;
+    min-width: 800px;
+    min-height: 160px;
+    display: none;
+}
+
+.ul-styling li.li-active {
+    display: inline-block;
+}
+
+
+/* End Auto Change Content */
+
+
+/* Start Create Dynamic Tabs */
+
+.ul-style {
+    overflow: hidden;
+}
+
+.ul-style li:first-of-type {
+    border-radius: 20px 0 0 0;
+}
+
+.ul-style li:last-of-type {
+    border-radius: 0 20px 0 0;
+}
+
+.ul-style li {
+    text-align: center;
+    padding: 15px;
+    font-size: 35px;
+    font-weight: bold;
+    border: 1px solid #1e220e;
+    cursor: pointer;
+    background-color: #956323;
+    color: #000;
+    float: left;
+    list-style: none;
+}
+
+.ul-style li.liactive {
+    color: #fff;
+    border-bottom: 1px solid #956323;
+}
+
+.ul-style .content {
+    text-align: left;
+    background-color: #956323;
+    color: #fff;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    min-height: 200px;
+    float: left;
+}
+
+.content div:not(:first-child) {
+    display: none;
+}
+
+
+/* Left Taps */
+
+.left-tabs {
+    width: 800px;
+}
+
+.left-tabs ul {
+    float: left;
+}
+
+.left-tabs ul li {
+    text-align: center;
+    padding: 15px;
+    font-size: 35px;
+    font-weight: bold;
+    border: 1px solid #1e220e;
+    cursor: pointer;
+    background-color: #956323;
+    color: #000;
+}
+
+.left-tabs li.liactive {
+    color: #fff;
+    border-right: 1px solid #956323;
+}
+
+.left-tabs .content {
+    text-align: left;
+    background-color: #956323;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    min-height: 400px;
+    float: left;
+    width: calc(100% - 130px);
+    padding: 15px;
+}
+
+.left-tabs li:first-of-type {
+    border-radius: 20px 0 0 0;
+}
+
+.left-tabs li:last-of-type {
+    border-radius: 0 0 0 20px;
+}
+
+
+/* End Create Dynamic Tabs */
+
+
+/* Start Create Email Suggest Box */
+
+.email-form input#email {
+    padding: 10px;
+    width: 50%;
+    margin-bottom: 15px;
+}
+
+.email-form .suggest-box {
+    width: 50%;
+    background-color: #fff;
+    color: #868886aa;
+    text-align: center;
+    position: relative;
+    position: relative;
+}
+
+.email-form .suggest-box li {
+    color: #4c4e4caa;
+    text-align: center;
+    cursor: pointer;
+}
+
+.email-form .suggest-box li:hover {
+    background-color: #bbb4b4;
+}
+
+.suggest-box::before {
+    content: '';
+    position: absolute;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #fdfdfd;
+    top: -20px;
+    left: 20px;
+}
+
+
+/* End Create Email Suggest Box */
